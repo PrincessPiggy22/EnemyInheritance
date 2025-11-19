@@ -14,6 +14,7 @@ public class Skeleton extends Enemy {
     // TODO: Implement update()
     @Override
     void update(){
+        System.out.println("--------|UPDATE|--------");
         System.out.println(this.name + " skeleton marches forward");
     }
 
@@ -21,6 +22,7 @@ public class Skeleton extends Enemy {
     // TODO: Implement attack()
     @Override
     void attack(){
+        System.out.println("--------|ATTACK|--------");
         System.out.println(this.name + " throws it's bones at you!");
         System.out.println("The attack does " + this.damage + " damage! :0");
     }
