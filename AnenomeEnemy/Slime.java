@@ -17,7 +17,7 @@ public class Slime extends Enemy{
     @Override
     void update(){
         System.out.println("--------|UPDATE|--------");
-        System.out.println("The slime slugs forward");
+        System.out.println(this.name + " the slime slugs forward");
         //System.out.println("\n");
     }
 
@@ -25,7 +25,7 @@ public class Slime extends Enemy{
     @Override
     void attack(){
         System.out.println("--------|ATTACK|--------");
-        System.out.println("The slime slimes you!");
+        System.out.println(this.name + " slimes you!");
         System.out.println("The attack does " + this.damage + " damage! :0");
         //System.out.println("\n");
     }
