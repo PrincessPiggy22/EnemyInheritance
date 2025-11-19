@@ -26,7 +26,7 @@ public abstract class Enemy {
     void takeDamage(int amount){
         System.out.println("--------|TAKE DMG|--------");
         this.health -= amount;
-        System.out.println("The enemy takes " + this.damage + " damage and has " + this.health +" hp left!");
+        System.out.println(this.name + " takes " + this.damage + " damage and has " + this.health +" hp left!");
         System.out.println("\n");
     }
     
