@@ -23,8 +23,9 @@ public abstract class Enemy {
     abstract void attack();
     
     // TODO: Create a concrete takeDamage(int amount) method
-    int takeDamage(int amount){
-        return this.health - amount;
+    void takeDamage(int amount){
+        this.health -= amount;
+        System.out.println("The enemy takes " + this.damage + " damage and has " + this.health +" hp left!");
     }
     
     // TODO: Add a getName() method
