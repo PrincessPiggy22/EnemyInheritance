@@ -1,18 +1,34 @@
 // Lab: Abstract Enemies
 // TODO: Declare this class as abstract
 
-public class Enemy {
+public abstract class Enemy {
 
     // TODO: Add protected instance variables:
     // health, damage, name
+    protected int health;
+    protected int damage;
+    protected String name;
 
     // TODO: Create a constructor that initializes all fields
+    public Enemy(int health, int damage, String name){
+        this.health = health;
+        this.damage = damage;
+        this.name = name;
+    }
 
     // TODO: Declare abstract methods:
     // update()
+    abstract void update();
     // attack()
-
+    abstract void attack();
+    
     // TODO: Create a concrete takeDamage(int amount) method
-
+    int takeDamage(int amount){
+        return this.health - amount;
+    }
+    
     // TODO: Add a getName() method
+    void getName(){
+        System.out.println(this.name);
+    }
 }
